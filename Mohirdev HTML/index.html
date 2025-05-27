@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <h1>Job Application</h1>
+  <p class="paragraph_1">Please complete the form below to apply for a position with us.</p><br>
+  
+  <hr>
+  <br>
+  <h3>Full Name <span id="span">*</span></h3>
+  <form action="aplocation.php" method="GET">
+    <div class="form">
+      <div class="form_items">
+        <input class="input" type="text" name="firstname" id="first_name">
+        <label class="label"for="first_name">First Name</label>
+      </div>
+    
+      <div class="form_items">
+        <input class="input" type="text" name="midle_name" id="midle_name">
+        <label class="label" for="midle_name">Middle Name</label>
+      </div>
+      
+      <div class="form_items">
+        <input class="input" type="text" name="last_name" id="last_name">
+        <label class="label" for="last_name">Last Name</label>
+      </div>
+    </div>
+    <br><br>
+    
+    
+    <h3>Body Size <span id="span">*</span></h3>
+    <div class="body_size">
+      <div class="body_size_items">
+        <input class="input" type="number"  name="height" id="height" placeholder="sm">
+        <label class="label"for="height">Height</label>
+      </div>
+      <div class="body_size_items">
+        <input class="input" type="number"  name="weight" id="weight" placeholder="kg">
+        <label class="label"for="weight">Weight</label>
+      </div>
+    </div>
+    <br><br>
+    
+    <h3>Birth Date</h3>
+    
+    <div class="form">
+      <div class="form_items">
+        <select class="input"  name="month" id="month">
+          <option value="not selected">Please select a month</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <label class="label" for="month">Month</label>
+      </div>
+    
+      <div class="form_items">
+        <select class="input" name="day" id="day">
+          <option value="0">Please select a day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>  
+        <label class="label" for="day">Day</label>
+      </div>
+      
+      <div class="form_items">
+        <select class="input" name="year" id="year">
+          <option value="0">Please select a year</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+          <option value="1999">1999</option>
+        </select>  
+        <label class="label" for="last_name">Last Name</label>
+      </div>
+    </div>
+    
+    <br><br>
+    
+    <h3>Family Status</h3>
+    <div>
+      <input type="radio" id="divorced" name="family_status" value="divorced">
+      <label for="divorced">Divorced</label><br>
+      <input type="radio" id="married" name="family_status" value="married">
+      <label for="married">Married</label><br>
+      <input type="radio" id="single" name="family_status" value="single">
+      <label for="single">Single</label><br>
+      <input type="radio" name="family_status" id="other" value="other">
+      <label for="other">Other</label>
+    </div>
+    
+    <br><br>
+    
+    <h3>Current Address</h3>
+    <div>
+      <input class="input" type="text" id="street" name="street">
+      <label class="label" for="street">Street Address</label><br>
+      <input class="input" type="text" id="street2" name="street2">
+      <label class="label" for="street2">Street Address Line 2</label>
+    </div><br>
+    <div class="body_size">
+      <div class="body_size_items">
+        <input class="input" type="text"  name="city" id="city">
+        <label class="label" for="city">City</label>
+      </div>
+      <div class="body_size_items">
+        <input class="input" type="text"  name="state" id="state">
+        <label class="label"for="state">
+State / Province</label>
+      </div>
+    </div>
+    <br>
+    
+    <input class="input" type="text" id="postal" name="postal">
+    <label class="label" for="postal">Postal / Zip Code</label>
+    <br>
+    <br>
+    
+    <div class="body_size">
+      <div class="body_size_items">
+        <h3>Email Address</h3>
+        <input class="input" type="email"  name="emaik" id="email" placeholder="ex: myname@example.com">
+        <label class="label"for="email">example@example.com</label>
+      </div>
+      <div class="body_size_items">
+        <h3>Phone Number</h3>
+        <div class="number_code">
+          <input class="input" type="number"  name="number_code" id="number_code" placeholder="90">
+          <label class="label"for="number">Area Code</label>
+        </div>
+        <div class="number">
+          <input class="input" type="number"  name="number" id="number" placeholder="9000909">
+          <label class="label"for="number">Phone Number</label>
+        </div>  
+      </div>
+    </div>
+    <br><br>
+    
+    <div class="body_size">
+      <div class="body_size_items">
+        <label for="linkedin"><h3>LinkedIn</h3></label>
+        <input class="input" type="text"  name="linkedin" id="linkedin">
+      </div>
+      <div class="body_size_items">
+        <label for="experience"><h3>Experience</h3></label>
+        <input class="input" type="number"  name="experience" id="experience" >
+      </div>
+    </div>
+    
+    <br>
+    
+    <div class="body_size_items">
+      <label for="date"><h3>Available Start Date</h3></label>
+      <input class="input" type="date"  name="start_date" id="date" placeholder="05/02/2024">
+    </div>
+    
+    <br><br>
+    
+    <h3>Computer Skills</h3>
+    <div class="table">
+      <table border="1">
+        <div class="table_th">
+          <th></th>
+          <th class="th">Beginner</th>
+          <th class="th">Elementary</th>
+          <th class="th">Advanced</th>
+          <th class="th">Expert</th>
+        </div>
+        <tr>
+          <th class="th">Excel</th>
+          <td class="td">      
+            <input type="radio" id="excel_beginner" name="excel" value="excel_beginner">
+            <label for="excel_beginner"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="excel_elementary" name="excel" value="excel_beginner">
+            <label for="excel_elementary"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="excel_advanced" name="excel" value="excel_advanced">
+            <label for="excel_advanced"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="excel_expert" name="excel" value="excel_expert">
+            <label for="excel_expert"></label>
+          </td>
+        </tr>
+        
+        <tr>
+          <th class="th">Word</th>
+          <td class="td">      
+            <input type="radio" id="word_beginner" name="word" value="word_beginner">
+            <label for="word_beginner"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="word_elementary" name="word" value="word_beginner">
+            <label for="word_elementary"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="word_advanced" name="word" value="word_advanced">
+            <label for="word_advanced"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="word_expert" name="word" value="word_expert">
+            <label for="word_expert"></label>
+          </td>
+        </tr>
+        
+        <tr>
+          <th class="th">1C</th>
+          <td class="td">      
+            <input type="radio" id="1c_beginner" name="1c" value="1c_beginner">
+            <label for="1c_beginner"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="1c_elementary" name="1c" value="1c_beginner">
+            <label for="1c_elementary"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="1c_advanced" name="1c" value="1c_advanced">
+            <label for="1c_advanced"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="1c_expert" name="1c" value="1c_expert">
+            <label for="1c_expert"></label>
+          </td>
+        </tr>
+        
+        <tr>
+          <th class="th">Programming Language</th>
+          <td class="td">      
+            <input type="radio" id="programming_beginner" name="programming" value="programming_beginner">
+            <label for="programming_beginner"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="programming_elementary" name="programming" value="programming_beginner">
+            <label for="programming_elementary"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="programming_advanced" name="programming" value="programming_advanced">
+            <label for="programming_advanced"></label>
+          </td>
+          <td class="td">
+            <input type="radio" id="programming_expert" name="programming" value="programming_expert">
+            <label for="programming_expert"></label>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br><br>
+    
+    <h3 class="">Ability knowing English Language</h3>
+    <div>
+      <div class="english">
+        <p class="p">Worst</p>
+        <input type="radio" id="1_level" name="english_level" value="1_level">
+        <label for="1_level"></label>
+      </div>
+      <div class="english">
+        <input type="radio" id="2_level" name="english_level" value="2_level">
+        <label for="2_level"></label>
+      </div>
+      <div class="english">
+        <input type="radio" id="3_level" name="english_level" value="3_level">
+        <label for="3_level"></label>
+      </div>
+      <div class="english">
+        <input type="radio" id="4_level" name="english_level" value="4_level">
+        <label for="4_level"></label>
+      </div>
+      <div class="english">
+        <p class="p">Best</p>
+        <input type="radio" id="5_level" name="english_level" value="5_level">
+        <label for="5_level"></label>
+      </div>
+    </div>
+    </select>
+    <br><br>
+    
+    <h3>Applicant Document(Diploma, Certificate)</h3>
+    <div class="files">
+      <label for="document"><img src="cloud.png" alt="image"/><h2>Browse Files</h2><p>Drags and drop files here</p></label>
+  
+      <input class="file" type="file" id="document" name="diploma">
+    </div>
+    <br><br>
+    
+    <h3>Upload Your Resume</h3>
+    <div class="files">
+      <label for="resume"><img src="cloud.png" alt="image"/><h2>Browse Files</h2><p>Drags and drop files here</p></label>
+  
+      <input class="file" type="file" id="resume" name="resume">
+    </div>
+    <br><br>
+    
+    <h3>Cover Letter</h3>
+    <textarea name="letter" rows="10" placeholder="Type here..."></textarea>
+    <br><br>
+    <hr>
+    
+    <br>
+    <div class="button">
+      <button type="submit">Apply</button>
+    </div>
+  </form>
+  <br>
+  <br>
+
+</body>
+</html>
